@@ -1,0 +1,137 @@
+/* Start Global-rules */
+*:not(p, h2),
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --main-color: hsl(179, 62%, 43%);
+  --second-color: hsl(71, 73%, 54%);
+  --background-color: hsl(204, 43%, 93%);
+  --text-color: hsl(218, 22%, 67%);
+}
+/* End Global-rules */
+main {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  width: 546.4008px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0 0 60px -45px black;
+  margin-block: 50px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+@media (max-width: 570px) {
+  main .container {
+    width: 326px;
+  }
+}
+main .container > * {
+  padding-inline: 34px;
+  padding-block: 35px 25px;
+  flex: 1 1 50%;
+  min-width: 258px;
+}
+/* Section one */
+main .section-1 {
+  background-color: white;
+  flex-basis: 100%;
+}
+main .section-1 h1 {
+  color: var(--main-color);
+  font-size: 21px;
+  font-weight: normal;
+  text-shadow: 0 0 1.85px hsl(179deg 100% 30%);
+}
+main .section-1 h2 {
+  color: var(--second-color);
+  margin-block: 21.2px 0px;
+  text-shadow: 0 0 1.5px hsl(71deg 100% 64%);
+  font-size: 15.2px;
+}
+main .section-1 p {
+  color: var(--text-color);
+  font-size: 13.7px;
+  line-height: 1.62;
+  margin-block: 10px;
+  letter-spacing: -0.1px;
+}
+/* End of section one */
+/* Section two⁡ */
+main .section-2 {
+  background-color: var(--main-color);
+  color: white;
+}
+main .section-2 h2 {
+  margin-block: 0 17px;
+  font-size: 15.8px;
+}
+main .section-2 h3 {
+  font-size: 27px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+main .section-2 p {
+  margin-block: 8px 27px;
+  opacity: 0.8;
+  font-size: 13.5px;
+}
+main .section-2 h3 span {
+  font-size: 13.4px;
+  opacity: 0.5;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+}
+main .section-2 button {
+  background-color: var(--second-color);
+  color: inherit;
+  box-shadow: 0 0 25px -15px black;
+  padding-block: 13px;
+  border: none;
+  border-radius: 5px;
+  width: 204px;
+  font-size: 14px;
+}
+/* End of section two */
+/* ⁡⁢⁣Section three⁡ */
+main .section-3 {
+  background-color: var(--main-color);
+  color: white;
+  opacity: 0.8;
+}
+main .section-3 h2 {
+  margin-block: 0;
+  font-size: 16px;
+}
+main :is(.section-2, .section-3) h2 {
+  font-weight: normal;
+}
+main .section-3 p {
+  opacity: 0.6;
+  line-height: 1.47;
+  font-size: 11.9px;
+  margin-block-start: 16px;
+}
+/* End of section three */
